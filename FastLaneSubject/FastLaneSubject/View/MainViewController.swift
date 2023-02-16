@@ -7,15 +7,21 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
     
     private let tableView : UITableView = { // 테이블뷰 생성
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        //tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
+        
         return tableView
     }()
+    
+    let viewModel = MainViewModel()
+    var disposeBag = DisposeBag()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +32,12 @@ class MainViewController: UIViewController {
         registerXib()
     }
     
-    
+    // MARK: - UI Binding
+
+    func setupBindings() {
+        viewModel.allVideos
+        
+    }
 }
 
 //MARK: - UI 그리기
