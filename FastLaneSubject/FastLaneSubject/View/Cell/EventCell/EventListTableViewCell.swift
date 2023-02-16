@@ -49,5 +49,9 @@ extension EventListTableViewCell : UITableViewDelegate, UITableViewDataSource {
     private func setTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.separatorInset.left = 0
+        tableView.separatorInset.right = 0
     }
+    
 }
