@@ -79,7 +79,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         case 0 :
             return 204
         default :
-            return 500
+            return 1000
         }
     }
     
@@ -95,6 +95,13 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     private func setTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
+        
+        tableView.separatorInset.left = 0
+        tableView.separatorInset.right = 0
+        
     }
     
 }

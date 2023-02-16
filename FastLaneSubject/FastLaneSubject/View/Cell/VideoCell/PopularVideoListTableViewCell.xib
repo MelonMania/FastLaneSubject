@@ -30,7 +30,7 @@
                             <color key="titleColor" systemColor="systemGrayColor"/>
                         </state>
                     </button>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rND-5H-UkT">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rND-5H-UkT">
                         <rect key="frame" x="0.0" y="55" width="414" height="128"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
