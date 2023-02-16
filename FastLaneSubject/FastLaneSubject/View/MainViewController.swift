@@ -46,16 +46,29 @@ extension MainViewController {
 //MARK: - UITableViewDelegate, UITableViewDataSource
 extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0 :
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: PopularVideoTableViewCell.identifier) as? PopularVideoTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: PopularVideoListTableViewCell.identifier) as? PopularVideoListTableViewCell else { return UITableViewCell() }
            
             return cell
+        case 1 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: EventListTableViewCell.identifier) as? EventListTableViewCell else { return UITableViewCell() }
+           
+            cell.eventTitleLabel.text = "추천이벤트"
+            cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
             
+            return cell
+        case 2 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: EventListTableViewCell.identifier) as? EventListTableViewCell else { return UITableViewCell() }
+           
+            cell.eventTitleLabel.text = "신규이벤트"
+            cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            
+            return cell
         default :
             return UITableViewCell()
         }
@@ -66,18 +79,17 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         case 0 :
             return 204
         default :
-            return 0
+            return 500
         }
     }
     
+
     private func registerXib() {
-        let popularVideoNib = UINib(nibName: PopularVideoTableViewCell.identifier, bundle: nil)
-        let recommendEventNib = UINib(nibName: RecommendEventTableViewCell.identifier, bundle: nil)
-        let newEventNib = UINib(nibName: NewEventTableViewCell.identifier, bundle: nil)
+        let popularVideoListNib = UINib(nibName: PopularVideoListTableViewCell.identifier, bundle: nil)
+        let eventListNib = UINib(nibName: EventListTableViewCell.identifier, bundle: nil)
         
-        tableView.register(popularVideoNib, forCellReuseIdentifier: PopularVideoTableViewCell.identifier)
-        tableView.register(recommendEventNib, forCellReuseIdentifier: RecommendEventTableViewCell.identifier)
-        tableView.register(newEventNib, forCellReuseIdentifier: NewEventTableViewCell.identifier)
+        tableView.register(popularVideoListNib, forCellReuseIdentifier: PopularVideoListTableViewCell.identifier)
+        tableView.register(eventListNib, forCellReuseIdentifier: EventListTableViewCell.identifier)
     }
     
     private func setTableView() {
