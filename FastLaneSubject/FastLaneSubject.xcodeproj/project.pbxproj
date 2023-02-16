@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1707AC0F299E4BA5001FD081 /* PopularVideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC0D299E4BA5001FD081 /* PopularVideoListTableViewCell.swift */; };
+		1707AC10299E4BA5001FD081 /* PopularVideoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1707AC0E299E4BA5001FD081 /* PopularVideoListTableViewCell.xib */; };
+		1707AC15299E6613001FD081 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC14299E6613001FD081 /* Utils.swift */; };
 		172F757C299E19AD007B74C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F757B299E19AD007B74C2 /* AppDelegate.swift */; };
 		172F757E299E19AD007B74C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F757D299E19AD007B74C2 /* SceneDelegate.swift */; };
 		172F7586299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 172F7584299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld */; };
@@ -16,6 +19,12 @@
 		172F75A0299E19AE007B74C2 /* FastLaneSubjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F759F299E19AE007B74C2 /* FastLaneSubjectUITests.swift */; };
 		172F75A2299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F75A1299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift */; };
 		175F9A27299E207B00D6870A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A26299E207B00D6870A /* MainViewController.swift */; };
+		175F9A45299E2D9200D6870A /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A43299E2D9200D6870A /* VideoCollectionViewCell.swift */; };
+		175F9A46299E2D9200D6870A /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175F9A44299E2D9200D6870A /* VideoCollectionViewCell.xib */; };
+		175F9A51299E46E300D6870A /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A4F299E46E300D6870A /* EventListTableViewCell.swift */; };
+		175F9A52299E46E300D6870A /* EventListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175F9A50299E46E300D6870A /* EventListTableViewCell.xib */; };
+		175F9A55299E46FA00D6870A /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A53299E46FA00D6870A /* EventTableViewCell.swift */; };
+		175F9A56299E46FA00D6870A /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175F9A54299E46FA00D6870A /* EventTableViewCell.xib */; };
 		37C007A3F0A52DA8A35EB582 /* Pods_FastLaneSubjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C668755E21D3EBDE712176E /* Pods_FastLaneSubjectTests.framework */; };
 		56496108C51B9724C54B737C /* Pods_FastLaneSubject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33395C48B65447FCA2A35FE /* Pods_FastLaneSubject.framework */; };
 		75EA3002EA84FBB203C2659E /* Pods_FastLaneSubject_FastLaneSubjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46757A466D53B299BD521E5 /* Pods_FastLaneSubject_FastLaneSubjectUITests.framework */; };
@@ -39,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1707AC0D299E4BA5001FD081 /* PopularVideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVideoListTableViewCell.swift; sourceTree = "<group>"; };
+		1707AC0E299E4BA5001FD081 /* PopularVideoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularVideoListTableViewCell.xib; sourceTree = "<group>"; };
+		1707AC14299E6613001FD081 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		172F7578299E19AD007B74C2 /* FastLaneSubject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastLaneSubject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F757B299E19AD007B74C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172F757D299E19AD007B74C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +64,12 @@
 		172F759F299E19AE007B74C2 /* FastLaneSubjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSubjectUITests.swift; sourceTree = "<group>"; };
 		172F75A1299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSubjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		175F9A26299E207B00D6870A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		175F9A43299E2D9200D6870A /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		175F9A44299E2D9200D6870A /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		175F9A4F299E46E300D6870A /* EventListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
+		175F9A50299E46E300D6870A /* EventListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListTableViewCell.xib; sourceTree = "<group>"; };
+		175F9A53299E46FA00D6870A /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		175F9A54299E46FA00D6870A /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		4B5C229CC4D0695F3123B24C /* Pods-FastLaneSubject-FastLaneSubjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastLaneSubject-FastLaneSubjectUITests.release.xcconfig"; path = "Target Support Files/Pods-FastLaneSubject-FastLaneSubjectUITests/Pods-FastLaneSubject-FastLaneSubjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C668755E21D3EBDE712176E /* Pods_FastLaneSubjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastLaneSubjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714F3EBC8A757CD88FE42D07 /* Pods-FastLaneSubject-FastLaneSubjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastLaneSubject-FastLaneSubjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-FastLaneSubject-FastLaneSubjectUITests/Pods-FastLaneSubject-FastLaneSubjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1707AC11299E65A3001FD081 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1707AC14299E6613001FD081 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		172F756F299E19AD007B74C2 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +148,7 @@
 				175F9A2A299E211600D6870A /* Domain */,
 				175F9A2B299E211C00D6870A /* ViewModel */,
 				175F9A25299E206300D6870A /* View */,
+				1707AC11299E65A3001FD081 /* Utils */,
 				172F758C299E19AE007B74C2 /* Info.plist */,
 				172F7584299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld */,
 			);
@@ -167,6 +194,7 @@
 		175F9A25299E206300D6870A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				175F9A2C299E255000D6870A /* Cell */,
 				175F9A26299E207B00D6870A /* MainViewController.swift */,
 			);
 			path = View;
@@ -198,6 +226,37 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		175F9A2C299E255000D6870A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				175F9A41299E2D3A00D6870A /* VideoCell */,
+				175F9A42299E2D4300D6870A /* EventCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		175F9A41299E2D3A00D6870A /* VideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				1707AC0D299E4BA5001FD081 /* PopularVideoListTableViewCell.swift */,
+				1707AC0E299E4BA5001FD081 /* PopularVideoListTableViewCell.xib */,
+				175F9A43299E2D9200D6870A /* VideoCollectionViewCell.swift */,
+				175F9A44299E2D9200D6870A /* VideoCollectionViewCell.xib */,
+			);
+			path = VideoCell;
+			sourceTree = "<group>";
+		};
+		175F9A42299E2D4300D6870A /* EventCell */ = {
+			isa = PBXGroup;
+			children = (
+				175F9A4F299E46E300D6870A /* EventListTableViewCell.swift */,
+				175F9A50299E46E300D6870A /* EventListTableViewCell.xib */,
+				175F9A53299E46FA00D6870A /* EventTableViewCell.swift */,
+				175F9A54299E46FA00D6870A /* EventTableViewCell.xib */,
+			);
+			path = EventCell;
 			sourceTree = "<group>";
 		};
 		602657CD2158A48F90BAAE8A /* Frameworks */ = {
@@ -332,8 +391,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175F9A56299E46FA00D6870A /* EventTableViewCell.xib in Resources */,
+				175F9A46299E2D9200D6870A /* VideoCollectionViewCell.xib in Resources */,
 				172F758B299E19AE007B74C2 /* LaunchScreen.storyboard in Resources */,
+				1707AC10299E4BA5001FD081 /* PopularVideoListTableViewCell.xib in Resources */,
 				172F7588299E19AE007B74C2 /* Assets.xcassets in Resources */,
+				175F9A52299E46E300D6870A /* EventListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +524,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175F9A55299E46FA00D6870A /* EventTableViewCell.swift in Sources */,
 				172F757C299E19AD007B74C2 /* AppDelegate.swift in Sources */,
+				1707AC15299E6613001FD081 /* Utils.swift in Sources */,
 				172F7586299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld in Sources */,
+				175F9A51299E46E300D6870A /* EventListTableViewCell.swift in Sources */,
 				172F757E299E19AD007B74C2 /* SceneDelegate.swift in Sources */,
 				175F9A27299E207B00D6870A /* MainViewController.swift in Sources */,
+				175F9A45299E2D9200D6870A /* VideoCollectionViewCell.swift in Sources */,
+				1707AC0F299E4BA5001FD081 /* PopularVideoListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

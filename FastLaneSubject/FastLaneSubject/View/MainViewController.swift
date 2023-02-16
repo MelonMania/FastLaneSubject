@@ -6,24 +6,95 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainViewController: UIViewController {
-
+    
+    private let tableView : UITableView = { // 테이블뷰 생성
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        //tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+        addSubView()
+        autoLayout()
+        setTableView()
+        registerXib()
+    }
+    
+    
+}
 
-        // Do any additional setup after loading the view.
+//MARK: - UI 그리기
+extension MainViewController {
+    
+    private func addSubView() {
+        view.addSubview(tableView)
+    }
+    
+    private func autoLayout() {
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+}
+
+//MARK: - UITableViewDelegate, UITableViewDataSource
+extension MainViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: PopularVideoListTableViewCell.identifier) as? PopularVideoListTableViewCell else { return UITableViewCell() }
+           
+            return cell
+        case 1 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: EventListTableViewCell.identifier) as? EventListTableViewCell else { return UITableViewCell() }
+           
+            cell.eventTitleLabel.text = "추천이벤트"
+            cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            
+            return cell
+        case 2 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: EventListTableViewCell.identifier) as? EventListTableViewCell else { return UITableViewCell() }
+           
+            cell.eventTitleLabel.text = "신규이벤트"
+            cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            
+            return cell
+        default :
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0 :
+            return 204
+        default :
+            return 500
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func registerXib() {
+        let popularVideoListNib = UINib(nibName: PopularVideoListTableViewCell.identifier, bundle: nil)
+        let eventListNib = UINib(nibName: EventListTableViewCell.identifier, bundle: nil)
+        
+        tableView.register(popularVideoListNib, forCellReuseIdentifier: PopularVideoListTableViewCell.identifier)
+        tableView.register(eventListNib, forCellReuseIdentifier: EventListTableViewCell.identifier)
     }
-    */
-
+    
+    private func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionViewCell" customModule="FastLaneSubject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-ZI-XCV">
+                        <rect key="frame" x="9" y="9" width="158" height="90.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90.329999999999998" id="VI9-yp-XWI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[슈링크] 리프팅 입문은 슈링크 ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hn-Vf-Hhe">
+                        <rect key="frame" x="10" y="104.33333333333333" width="156" height="14.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.67" id="KIf-Ze-Hsm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="wuU-ZI-XCV" secondAttribute="trailing" constant="10" id="3br-Ef-127"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="7hn-Vf-Hhe" secondAttribute="trailing" constant="11" id="6nv-3L-VEp"/>
+                <constraint firstItem="7hn-Vf-Hhe" firstAttribute="top" secondItem="wuU-ZI-XCV" secondAttribute="bottom" constant="5" id="BTV-h6-Pzf"/>
+                <constraint firstItem="7hn-Vf-Hhe" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="10" id="E25-c6-nqG"/>
+                <constraint firstItem="wuU-ZI-XCV" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="9" id="Nyp-1j-fcp"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="7hn-Vf-Hhe" secondAttribute="bottom" constant="9" id="qx4-C8-JBh"/>
+            </constraints>
+            <size key="customSize" width="177" height="129"/>
+            <connections>
+                <outlet property="videoThumnailImageView" destination="wuU-ZI-XCV" id="3Tz-ep-7RJ"/>
+                <outlet property="videoTitleLabel" destination="7hn-Vf-Hhe" id="PHR-qa-nYe"/>
+            </connections>
+            <point key="canvasLocation" x="-35.877862595419849" y="-11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+</document>
