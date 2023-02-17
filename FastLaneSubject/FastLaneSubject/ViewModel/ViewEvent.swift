@@ -27,7 +27,13 @@ struct ViewEvent {
         
         wishCount = event.wishCount
         reviewCount = event.reviewCount
-        rate = Double(event.rateScore / event.reviewCount)
+        
+        if event.reviewCount == 0 {
+            rate = 0
+        } else {
+            rate = Double(event.rateScore / event.reviewCount)
+        }
+        
     }
     
     init(eventImageURL: String, displayName: String, eventName: String, comment : String, price : Int, wishCount : Int, reviewCount : Int, rate : Double) {
