@@ -23,8 +23,7 @@ class MainViewController: UIViewController {
     let viewModel: MainViewModelType
     var disposeBag = DisposeBag()
 
-    // MARK: - Life Cycle
-
+    
     init(viewModel: MainViewModelType = MainViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -42,8 +41,42 @@ class MainViewController: UIViewController {
         autoLayout()
         setTableView()
         registerXib()
+        //setBindings()
     }
     
+//    func setBindings() {
+//        Observable.just(())
+//            .bind(to: viewModel.fetchNewEvent)
+//            .disposed(by: disposeBag)
+//
+//        Observable.just(())
+//            .bind(to: viewModel.fetchRecommendEvent)
+//            .disposed(by: disposeBag)
+//
+//        viewModel.allNewEvents
+//            .map({ [weak self] events in
+//                self?.newEventCount.onNext(events.count)
+//                return events.count
+//            })
+//            .subscribe({ count in
+//                print("new : \(count)")
+//
+//            })
+//            .disposed(by: disposeBag)
+//
+//        viewModel.allRecommendEvents
+//            .map({ [weak self] events in
+//                self?.recommentEventCount.onNext(events.count)
+//                return events.count
+//            })
+//            .subscribe({ count in
+//                print("rec : \(count)")
+//
+//            })
+//            .disposed(by: disposeBag)
+//
+//        tableView.reloadData()
+//    }
 }
 
 //MARK: - UI 그리기
@@ -96,7 +129,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         case 0 :
             return 204
         default :
-            return 10000
+            return CGFloat(45 + (109 * 55))
         }
     }
     
@@ -118,9 +151,6 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         
         tableView.separatorInset.left = 0
         tableView.separatorInset.right = 0
-        
-        tableView.refreshControl = UIRefreshControl()
-        
     }
     
 }
