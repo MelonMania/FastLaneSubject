@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import RxSwift
+import RxViewController
 import RxCocoa
 
 class MainViewController: UIViewController {
@@ -19,25 +20,30 @@ class MainViewController: UIViewController {
         return tableView
     }()
     
-    let viewModel = MainViewModel()
+    let viewModel: MainViewModelType
     var disposeBag = DisposeBag()
-    
+
+    // MARK: - Life Cycle
+
+    init(viewModel: MainViewModelType = MainViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        viewModel = MainViewModel()
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+
         addSubView()
         autoLayout()
         setTableView()
         registerXib()
     }
     
-    // MARK: - UI Binding
-
-    func setupBindings() {
-        viewModel.allVideos
-        
-    }
 }
 
 //MARK: - UI 그리기
@@ -112,6 +118,8 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         
         tableView.separatorInset.left = 0
         tableView.separatorInset.right = 0
+        
+        tableView.refreshControl = UIRefreshControl()
         
     }
     

@@ -18,7 +18,7 @@ class ResponseStore : ResponseFetchable {
     func fetchVideo() -> Observable<[YsTvList]> {
         return APIService.getRequest()
             .map { data in
-                guard let videoList = data.results.ysTvList else { return }
+                let videoList = data.results.ysTvList
                 return videoList
             }
     }
@@ -26,7 +26,7 @@ class ResponseStore : ResponseFetchable {
     func fetchRecommendEvent() -> Observable<[EventList]> {
         return APIService.getRequest()
             .map { data in
-                guard let recommendEventList = data.results.recommendEventList else { return }
+                let recommendEventList = data.results.recommendEventList
                 return recommendEventList
             }
     }
@@ -34,7 +34,7 @@ class ResponseStore : ResponseFetchable {
     func fetchNewEvent() -> Observable<[EventList]> {
         return APIService.getRequest()
             .map { data in
-                guard let newEventList = data.results.newEventList else { return }
+                let newEventList = data.results.newEventList
                 return newEventList
             }
     }
