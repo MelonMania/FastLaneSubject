@@ -7,8 +7,11 @@ target 'FastLaneSubject' do
 
   # Pods for FastLaneSubject
   pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxViewController'
   pod 'Alamofire'
   pod 'SnapKit'
+  pod 'Kingfisher'
 
   target 'FastLaneSubjectTests' do
     inherit! :search_paths

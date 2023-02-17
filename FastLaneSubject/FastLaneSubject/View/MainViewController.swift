@@ -7,25 +7,42 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxViewController
+import RxCocoa
 
 class MainViewController: UIViewController {
     
     private let tableView : UITableView = { // 테이블뷰 생성
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        //tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.identifier)
+        
         return tableView
     }()
     
+    let viewModel: MainViewModelType
+    var disposeBag = DisposeBag()
+
+    // MARK: - Life Cycle
+
+    init(viewModel: MainViewModelType = MainViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        viewModel = MainViewModel()
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+
         addSubView()
         autoLayout()
         setTableView()
         registerXib()
     }
-    
     
 }
 
@@ -101,6 +118,8 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         
         tableView.separatorInset.left = 0
         tableView.separatorInset.right = 0
+        
+        tableView.refreshControl = UIRefreshControl()
         
     }
     

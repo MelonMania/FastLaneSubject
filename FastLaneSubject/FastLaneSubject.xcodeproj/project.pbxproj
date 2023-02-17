@@ -10,6 +10,12 @@
 		1707AC0F299E4BA5001FD081 /* PopularVideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC0D299E4BA5001FD081 /* PopularVideoListTableViewCell.swift */; };
 		1707AC10299E4BA5001FD081 /* PopularVideoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1707AC0E299E4BA5001FD081 /* PopularVideoListTableViewCell.xib */; };
 		1707AC15299E6613001FD081 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC14299E6613001FD081 /* Utils.swift */; };
+		1707AC18299EA33A001FD081 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC17299EA33A001FD081 /* ResponseModel.swift */; };
+		1707AC1A299EA404001FD081 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC19299EA404001FD081 /* APIService.swift */; };
+		1707AC1C299EAB92001FD081 /* ResponseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC1B299EAB92001FD081 /* ResponseStore.swift */; };
+		1707AC1E299EB55C001FD081 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC1D299EB55C001FD081 /* MainViewModel.swift */; };
+		1707AC20299EC000001FD081 /* ViewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC1F299EC000001FD081 /* ViewVideo.swift */; };
+		1707AC22299EC00A001FD081 /* ViewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707AC21299EC00A001FD081 /* ViewEvent.swift */; };
 		172F757C299E19AD007B74C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F757B299E19AD007B74C2 /* AppDelegate.swift */; };
 		172F757E299E19AD007B74C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F757D299E19AD007B74C2 /* SceneDelegate.swift */; };
 		172F7586299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 172F7584299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld */; };
@@ -51,6 +57,12 @@
 		1707AC0D299E4BA5001FD081 /* PopularVideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularVideoListTableViewCell.swift; sourceTree = "<group>"; };
 		1707AC0E299E4BA5001FD081 /* PopularVideoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularVideoListTableViewCell.xib; sourceTree = "<group>"; };
 		1707AC14299E6613001FD081 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1707AC17299EA33A001FD081 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		1707AC19299EA404001FD081 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1707AC1B299EAB92001FD081 /* ResponseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStore.swift; sourceTree = "<group>"; };
+		1707AC1D299EB55C001FD081 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1707AC1F299EC000001FD081 /* ViewVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVideo.swift; sourceTree = "<group>"; };
+		1707AC21299EC00A001FD081 /* ViewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEvent.swift; sourceTree = "<group>"; };
 		172F7578299E19AD007B74C2 /* FastLaneSubject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastLaneSubject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F757B299E19AD007B74C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172F757D299E19AD007B74C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +215,7 @@
 		175F9A28299E20DF00D6870A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1707AC17299EA33A001FD081 /* ResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 		175F9A29299E210400D6870A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				1707AC19299EA404001FD081 /* APIService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -217,6 +231,7 @@
 		175F9A2A299E211600D6870A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1707AC1B299EAB92001FD081 /* ResponseStore.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -224,6 +239,9 @@
 		175F9A2B299E211C00D6870A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1707AC1F299EC000001FD081 /* ViewVideo.swift */,
+				1707AC21299EC00A001FD081 /* ViewEvent.swift */,
+				1707AC1D299EB55C001FD081 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -526,12 +544,18 @@
 			files = (
 				175F9A55299E46FA00D6870A /* EventTableViewCell.swift in Sources */,
 				172F757C299E19AD007B74C2 /* AppDelegate.swift in Sources */,
+				1707AC1C299EAB92001FD081 /* ResponseStore.swift in Sources */,
 				1707AC15299E6613001FD081 /* Utils.swift in Sources */,
 				172F7586299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld in Sources */,
+				1707AC1E299EB55C001FD081 /* MainViewModel.swift in Sources */,
+				1707AC1A299EA404001FD081 /* APIService.swift in Sources */,
 				175F9A51299E46E300D6870A /* EventListTableViewCell.swift in Sources */,
+				1707AC22299EC00A001FD081 /* ViewEvent.swift in Sources */,
 				172F757E299E19AD007B74C2 /* SceneDelegate.swift in Sources */,
 				175F9A27299E207B00D6870A /* MainViewController.swift in Sources */,
+				1707AC20299EC000001FD081 /* ViewVideo.swift in Sources */,
 				175F9A45299E2D9200D6870A /* VideoCollectionViewCell.swift in Sources */,
+				1707AC18299EA33A001FD081 /* ResponseModel.swift in Sources */,
 				1707AC0F299E4BA5001FD081 /* PopularVideoListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

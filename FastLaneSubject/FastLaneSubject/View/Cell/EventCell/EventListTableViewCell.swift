@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class EventListTableViewCell: UITableViewCell {
     
     static let identifier = "EventListTableViewCell"
-    
+
     @IBOutlet weak var eventTitleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -36,6 +38,7 @@ extension EventListTableViewCell : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.identifier) as? EventTableViewCell else { return UITableViewCell() }
+
         
         return cell
     }
