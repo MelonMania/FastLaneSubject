@@ -96,7 +96,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         case 0 :
             return 204
         default :
-            return 1000
+            return 10000
         }
     }
     
