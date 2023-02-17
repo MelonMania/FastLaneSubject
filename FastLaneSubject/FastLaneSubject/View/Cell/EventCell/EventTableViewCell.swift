@@ -38,7 +38,7 @@ class EventTableViewCell: UITableViewCell {
 
         data.observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] event in
-                self?.thumnailImageView.kf.setImage(with: URL(string: event.eventImageURL))
+                self?.thumnailImageView.kf.setImage(with: URL(string: event.eventImageURL), placeholder: UIImage(named: "DefaultEventImage"))
                 
                 self?.displayNameLabel.text = event.displayName
                 self?.nameLabel.text = event.eventName
