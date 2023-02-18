@@ -24,6 +24,8 @@
 		172F7596299E19AE007B74C2 /* FastLaneSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F7595299E19AE007B74C2 /* FastLaneSubjectTests.swift */; };
 		172F75A0299E19AE007B74C2 /* FastLaneSubjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F759F299E19AE007B74C2 /* FastLaneSubjectUITests.swift */; };
 		172F75A2299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F75A1299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift */; };
+		173BEBFC299FD22200E10B03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BEBFA299FD22200E10B03 /* DetailViewController.swift */; };
+		173BEBFD299FD22200E10B03 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173BEBFB299FD22200E10B03 /* DetailViewController.xib */; };
 		175F9A27299E207B00D6870A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A26299E207B00D6870A /* MainViewController.swift */; };
 		175F9A45299E2D9200D6870A /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9A43299E2D9200D6870A /* VideoCollectionViewCell.swift */; };
 		175F9A46299E2D9200D6870A /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175F9A44299E2D9200D6870A /* VideoCollectionViewCell.xib */; };
@@ -75,6 +77,8 @@
 		172F759B299E19AE007B74C2 /* FastLaneSubjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastLaneSubjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		172F759F299E19AE007B74C2 /* FastLaneSubjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSubjectUITests.swift; sourceTree = "<group>"; };
 		172F75A1299E19AE007B74C2 /* FastLaneSubjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaneSubjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		173BEBFA299FD22200E10B03 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		173BEBFB299FD22200E10B03 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		175F9A26299E207B00D6870A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		175F9A43299E2D9200D6870A /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		175F9A44299E2D9200D6870A /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			children = (
 				175F9A2C299E255000D6870A /* Cell */,
 				175F9A26299E207B00D6870A /* MainViewController.swift */,
+				173BEBFA299FD22200E10B03 /* DetailViewController.swift */,
+				173BEBFB299FD22200E10B03 /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 			files = (
 				175F9A56299E46FA00D6870A /* EventTableViewCell.xib in Resources */,
 				175F9A46299E2D9200D6870A /* VideoCollectionViewCell.xib in Resources */,
+				173BEBFD299FD22200E10B03 /* DetailViewController.xib in Resources */,
 				172F758B299E19AE007B74C2 /* LaunchScreen.storyboard in Resources */,
 				1707AC10299E4BA5001FD081 /* PopularVideoListTableViewCell.xib in Resources */,
 				172F7588299E19AE007B74C2 /* Assets.xcassets in Resources */,
@@ -549,6 +556,7 @@
 				172F7586299E19AD007B74C2 /* FastLaneSubject.xcdatamodeld in Sources */,
 				1707AC1E299EB55C001FD081 /* MainViewModel.swift in Sources */,
 				1707AC1A299EA404001FD081 /* APIService.swift in Sources */,
+				173BEBFC299FD22200E10B03 /* DetailViewController.swift in Sources */,
 				175F9A51299E46E300D6870A /* EventListTableViewCell.swift in Sources */,
 				1707AC22299EC00A001FD081 /* ViewEvent.swift in Sources */,
 				172F757E299E19AD007B74C2 /* SceneDelegate.swift in Sources */,

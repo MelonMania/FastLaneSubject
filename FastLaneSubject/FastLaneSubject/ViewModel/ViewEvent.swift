@@ -9,6 +9,8 @@ import Foundation
 
 struct ViewEvent {
     var eventImageURL : String
+    var customerName : String
+    var locationName : String
     var displayName : String
     var eventName : String
     var comment : String
@@ -20,6 +22,8 @@ struct ViewEvent {
     
     init(_ event: EventList) {
         eventImageURL = event.thumbnailImageURL
+        customerName = event.customerName
+        locationName = event.locationName
         displayName = event.displayName
         eventName = event.name
         comment = event.comment
@@ -36,8 +40,10 @@ struct ViewEvent {
         
     }
     
-    init(eventImageURL: String, displayName: String, eventName: String, comment : String, price : Int, wishCount : Int, reviewCount : Int, rate : Double) {
+    init(eventImageURL: String, customerName : String, locationName : String, displayName: String, eventName: String, comment : String, price : Int, wishCount : Int, reviewCount : Int, rate : Double) {
         self.eventImageURL = eventImageURL
+        self.customerName = customerName
+        self.locationName = locationName
         self.displayName = displayName
         self.eventName = eventName
         self.comment = comment
@@ -46,4 +52,5 @@ struct ViewEvent {
         self.reviewCount = reviewCount
         self.rate = rate
     }
+    
 }

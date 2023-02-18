@@ -23,8 +23,7 @@ class MainViewController: UIViewController {
     let viewModel: MainViewModelType
     var disposeBag = DisposeBag()
 
-    // MARK: - Life Cycle
-
+    
     init(viewModel: MainViewModelType = MainViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -37,11 +36,17 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         addSubView()
         autoLayout()
+        
         setTableView()
         registerXib()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setNavigationBar()
     }
     
 }
@@ -57,6 +62,13 @@ extension MainViewController {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func setNavigationBar() {
+        let backBarButtonItem = UIBarButtonItem(title: "     이벤트", style: .plain, target: self, action: nil)
+
+        self.navigationItem.backBarButtonItem = backBarButtonItem
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
 
@@ -77,6 +89,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
            
             cell.eventTitleLabel.text = "추천이벤트"
             cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            cell.delegate = self
             
             return cell
         case 2 :
@@ -84,6 +97,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
            
             cell.eventTitleLabel.text = "신규이벤트"
             cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            cell.delegate = self
             
             return cell
         default :
@@ -96,7 +110,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         case 0 :
             return 204
         default :
-            return 10000
+            return CGFloat(45 + (109 * 55))
         }
     }
     
@@ -118,9 +132,18 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         
         tableView.separatorInset.left = 0
         tableView.separatorInset.right = 0
-        
-        tableView.refreshControl = UIRefreshControl()
-        
     }
     
+}
+
+//MARK: - TransferDelegate
+extension MainViewController : TransferDelegate {
+    func didSelectEvent(event : ViewEvent) {
+        let vc = DetailViewController()
+        vc.event = event
+        print(event)
+        print("delegate 실행")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
