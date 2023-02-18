@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: MainViewController())  // root로 설정할 UIViewController
         window?.makeKeyAndVisible()
         
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "customArrow")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "customArrowx`")
+        UINavigationBar.appearance().tintColor = .darkGray
+        
         return true
     }
 

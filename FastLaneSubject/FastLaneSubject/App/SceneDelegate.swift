@@ -20,6 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window?.rootViewController = UINavigationController(rootViewController: mainViewController) 
         window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().backIndicatorImage = UIImage(systemName: "customArrow")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(systemName: "customArrow")
+        UINavigationBar.appearance().tintColor = .darkGray
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

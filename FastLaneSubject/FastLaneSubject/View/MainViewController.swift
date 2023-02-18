@@ -38,10 +38,15 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         addSubView()
         autoLayout()
-        setNavigationBar()
         
         setTableView()
         registerXib()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setNavigationBar()
     }
     
 }
@@ -60,6 +65,9 @@ extension MainViewController {
     }
     
     private func setNavigationBar() {
+        let backBarButtonItem = UIBarButtonItem(title: "     이벤트", style: .plain, target: self, action: nil)
+
+        self.navigationItem.backBarButtonItem = backBarButtonItem
         self.navigationController?.navigationBar.isHidden = true
     }
 }
@@ -135,7 +143,7 @@ extension MainViewController : TransferDelegate {
         vc.event = event
         print(event)
         print("delegate 실행")
-        //self.navigationController?.navigationBar.topItem?.title = "이벤트"
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

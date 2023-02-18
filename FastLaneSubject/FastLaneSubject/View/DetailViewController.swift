@@ -44,6 +44,26 @@ class DetailViewController: UIViewController {
     }
     
     private func setNavigationBar() {
+        //setNavigationTitle()
         self.navigationController?.navigationBar.isHidden = false
+    }
+        
+    private func setNavigationTitle() {
+        let titleLabel = UILabel()
+        titleLabel.textColor = UIColor.black
+        titleLabel.text = "이벤트"
+        titleLabel.textAlignment = .left
+        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+        titleLabel.sizeToFit()
+        
+        let spacer = UIView()
+        let constraint = spacer.widthAnchor.constraint(greaterThanOrEqualToConstant: CGFloat.greatestFiniteMagnitude)
+        constraint.isActive = true
+        constraint.priority = .defaultLow
+        
+        let titleView = UIStackView(arrangedSubviews: [titleLabel, spacer])
+        titleView.axis = .horizontal
+        
+        self.navigationItem.titleView = titleView
     }
 }
