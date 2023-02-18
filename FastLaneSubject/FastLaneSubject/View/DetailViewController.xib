@@ -15,8 +15,8 @@
                 <outlet property="customerNameLabel" destination="6hh-8r-yHQ" id="PwI-al-kJk"/>
                 <outlet property="locationNameLabel" destination="7X0-Pp-Dd8" id="jLX-cv-MCR"/>
                 <outlet property="nameLabel" destination="Ae7-4j-0L1" id="d1Q-kc-rZo"/>
-                <outlet property="priceLabel" destination="F6P-BB-Be3" id="5Nn-th-Gz0"/>
-                <outlet property="rateLabel" destination="W5Q-d3-Pjd" id="oP2-iu-LYz"/>
+                <outlet property="priceLabel" destination="F6P-BB-Be3" id="Po0-4s-LfR"/>
+                <outlet property="rateLabel" destination="W5Q-d3-Pjd" id="9PL-zl-O7g"/>
                 <outlet property="thumnailImageView" destination="Z7x-HV-Jy0" id="zrY-gs-xx8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

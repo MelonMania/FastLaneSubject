@@ -36,47 +36,14 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         addSubView()
         autoLayout()
+        setNavigationBar()
+        
         setTableView()
         registerXib()
-        //setBindings()
     }
     
-//    func setBindings() {
-//        Observable.just(())
-//            .bind(to: viewModel.fetchNewEvent)
-//            .disposed(by: disposeBag)
-//
-//        Observable.just(())
-//            .bind(to: viewModel.fetchRecommendEvent)
-//            .disposed(by: disposeBag)
-//
-//        viewModel.allNewEvents
-//            .map({ [weak self] events in
-//                self?.newEventCount.onNext(events.count)
-//                return events.count
-//            })
-//            .subscribe({ count in
-//                print("new : \(count)")
-//
-//            })
-//            .disposed(by: disposeBag)
-//
-//        viewModel.allRecommendEvents
-//            .map({ [weak self] events in
-//                self?.recommentEventCount.onNext(events.count)
-//                return events.count
-//            })
-//            .subscribe({ count in
-//                print("rec : \(count)")
-//
-//            })
-//            .disposed(by: disposeBag)
-//
-//        tableView.reloadData()
-//    }
 }
 
 //MARK: - UI 그리기
@@ -90,6 +57,10 @@ extension MainViewController {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func setNavigationBar() {
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
 
@@ -110,6 +81,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
            
             cell.eventTitleLabel.text = "추천이벤트"
             cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            cell.delegate = self
             
             return cell
         case 2 :
@@ -117,6 +89,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
            
             cell.eventTitleLabel.text = "신규이벤트"
             cell.eventTitleLabel.asColor(targetString: "이벤트", color: UIColor.systemPink)
+            cell.delegate = self
             
             return cell
         default :
@@ -153,4 +126,16 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         tableView.separatorInset.right = 0
     }
     
+}
+
+//MARK: - TransferDelegate
+extension MainViewController : TransferDelegate {
+    func didSelectEvent(event : ViewEvent) {
+        let vc = DetailViewController()
+        vc.event = event
+        print(event)
+        print("delegate 실행")
+        //self.navigationController?.navigationBar.topItem?.title = "이벤트"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
