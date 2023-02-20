@@ -16,6 +16,7 @@
                 <outlet property="locationNameLabel" destination="7X0-Pp-Dd8" id="jLX-cv-MCR"/>
                 <outlet property="nameLabel" destination="Ae7-4j-0L1" id="d1Q-kc-rZo"/>
                 <outlet property="priceLabel" destination="F6P-BB-Be3" id="Po0-4s-LfR"/>
+                <outlet property="purchaseButton" destination="7I9-Hg-SH1" id="DBC-ET-bhI"/>
                 <outlet property="rateLabel" destination="W5Q-d3-Pjd" id="9PL-zl-O7g"/>
                 <outlet property="thumnailImageView" destination="Z7x-HV-Jy0" id="zrY-gs-xx8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -81,41 +82,41 @@
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r33-Nf-gg5">
                     <rect key="frame" x="16" y="532.66666666666663" width="90" height="18"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QEA-jB-h06">
-                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="customStar" translatesAutoresizingMaskIntoConstraints="NO" id="QEA-jB-h06">
+                            <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
                             <color key="tintColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="17.999999999999922" id="TWR-iW-f2D"/>
                                 <constraint firstAttribute="width" constant="18" id="rPb-Ae-fdE"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IS7-sv-bRY">
-                            <rect key="frame" x="18" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="customStar" translatesAutoresizingMaskIntoConstraints="NO" id="IS7-sv-bRY">
+                            <rect key="frame" x="18" y="0.0" width="18" height="18"/>
                             <color key="tintColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="18" id="d51-pc-0bd"/>
                                 <constraint firstAttribute="height" constant="17.999999999999886" id="zMq-Lr-dxT"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-2A-hGa">
-                            <rect key="frame" x="36" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="customStar" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-2A-hGa">
+                            <rect key="frame" x="36" y="0.0" width="18" height="18"/>
                             <color key="tintColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="18" id="TAF-JE-kcP"/>
                                 <constraint firstAttribute="height" constant="17.999999999999773" id="vxR-4J-Gcs"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ado-A3-dvx">
-                            <rect key="frame" x="54" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="customStar" translatesAutoresizingMaskIntoConstraints="NO" id="Ado-A3-dvx">
+                            <rect key="frame" x="54" y="0.0" width="18" height="18"/>
                             <color key="tintColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="17.999999999999886" id="Uc6-eA-V3T"/>
                                 <constraint firstAttribute="width" constant="18" id="oNK-Kr-yOt"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-o1-ijZ">
-                            <rect key="frame" x="72" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
-                            <color key="tintColor" systemColor="systemGray5Color"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="customStar" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-o1-ijZ">
+                            <rect key="frame" x="72" y="0.0" width="18" height="18"/>
+                            <color key="tintColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="17.999999999999886" id="nwd-za-G9Q"/>
                                 <constraint firstAttribute="width" constant="18" id="v4i-ob-jJl"/>
@@ -168,7 +169,7 @@
                                     </constraints>
                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="gift" catalog="system" title=""/>
+                                    <buttonConfiguration key="configuration" style="plain" image="customGift" title=""/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선물" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-CC-wBN">
                                     <rect key="frame" x="0.0" y="30" width="30" height="20"/>
@@ -187,14 +188,15 @@
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I9-Hg-SH1">
                             <rect key="frame" x="137" y="12" width="239" height="50"/>
+                            <color key="backgroundColor" red="0.86889982219999995" green="0.33911478519999999" blue="0.50095951559999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="T9p-CR-ixf"/>
                             </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" title="구매하기">
-                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="baseBackgroundColor" red="0.86889982219999995" green="0.33911478519999999" blue="0.50095951559999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </buttonConfiguration>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="구매하기">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1FA-Hw-aTc">
                             <rect key="frame" x="26" y="12" width="30" height="50"/>
@@ -207,7 +209,7 @@
                                     </constraints>
                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title=""/>
+                                    <buttonConfiguration key="configuration" style="plain" image="customHeart" title=""/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSw-Xx-fVP">
                                     <rect key="frame" x="0.0" y="30" width="30" height="20"/>
@@ -265,9 +267,9 @@
         </view>
     </objects>
     <resources>
-        <image name="gift" catalog="system" width="128" height="125"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="customGift" width="24" height="24"/>
+        <image name="customHeart" width="24" height="24"/>
+        <image name="customStar" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

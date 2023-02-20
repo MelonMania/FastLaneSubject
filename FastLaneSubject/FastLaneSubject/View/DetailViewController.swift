@@ -24,6 +24,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var priceLabel: UILabel!
     
+    @IBOutlet weak var purchaseButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +43,8 @@ class DetailViewController: UIViewController {
             rateLabel.text = "\(eve.rate)"
             priceLabel.text = eve.price.formattedWithSeparator
         }
+        
+        purchaseButton.layer.cornerRadius = 5
     }
     
     private func setNavigationBar() {
