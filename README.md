@@ -10,5 +10,6 @@
 
 ## 🎬 시연영상
 
-https://user-images.githubusercontent.com/25768897/220143800-3e246a55-cf3b-4868-8a3a-71be6c8b1425.mp4
+
+https://user-images.githubusercontent.com/25768897/220173236-dfa1ef56-aaf2-4885-8c79-68f43d17b703.mp4
 
