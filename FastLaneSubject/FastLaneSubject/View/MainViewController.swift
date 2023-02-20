@@ -38,6 +38,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         addSubView()
         autoLayout()
         
@@ -74,6 +75,7 @@ class MainViewController: UIViewController {
                 self?.recommendEventCount = event.count
                 self?.tableView.reloadData()
             }).disposed(by: disposeBag)
+
     }
 }
 
