@@ -16,4 +16,21 @@ extension UILabel {
         attributedString.addAttribute(.foregroundColor, value: color, range: range)
         attributedText = attributedString
     }
+    
 }
+
+// 숫자 천의 자리마다 콤마 삽입
+extension Formatter {
+    static let withSeparator: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = "," // 천 단위마다 , 콤마 넣어주기
+        return formatter
+    }()
+}
+
+extension Numeric {
+    var formattedWithSeparator: String { Formatter.withSeparator.string(for: self) ?? "" }
+}
+
+
