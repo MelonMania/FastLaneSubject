@@ -31,7 +31,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
         data.observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] video in
                 self?.videoTitleLabel.text = video.videoTitle
-                self?.videoThumnailImageView.kf.setImage(with: URL(string: video.videoImageUrl))
+                self?.videoThumnailImageView.kf.setImage(with: URL(string: video.videoImageUrl), placeholder: UIImage(named: "DefaultVideoImage"))
             })
             .disposed(by: cellDisposeBag)
     }
