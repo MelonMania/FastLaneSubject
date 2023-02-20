@@ -39,7 +39,7 @@ class DetailViewController: UIViewController {
             nameLabel.text = eve.eventName
             commentLabel.text = eve.comment
             rateLabel.text = "\(eve.rate)"
-            priceLabel.text = "\(eve.price)"
+            priceLabel.text = eve.price.formattedWithSeparator
         }
     }
     
