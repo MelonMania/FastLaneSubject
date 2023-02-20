@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - MessageListResponse
+// MARK: - ResponseModel
 struct ResponseModel: Codable {
     var serverCode, serverMsg: String
     var results: Results

@@ -59,7 +59,7 @@
                     </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F44-S6-Wj7">
-                    <rect key="frame" x="16" y="476" width="316.33333333333331" height="48"/>
+                    <rect key="frame" x="16" y="476" width="316.33333333333331" height="47.333333333333371"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="레스틸렌 키스 입술전용 필러" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-4j-0L1">
                             <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="20"/>
@@ -70,22 +70,16 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우아의 프리미엄 수입필러 고탄성 히알루론산 필러!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-cE-EWw">
-                            <rect key="frame" x="0.0" y="28" width="316.33333333333331" height="20"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="IuW-dT-peW"/>
-                            </constraints>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우아의 프리미엄 수입필러 고탄성 히알루론산 필러!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-cE-EWw">
+                            <rect key="frame" x="0.0" y="28" width="316.33333333333331" height="19.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" systemColor="systemGray2Color"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="rvF-TU-9az"/>
-                    </constraints>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r33-Nf-gg5">
-                    <rect key="frame" x="16" y="533.33333333333337" width="90" height="18"/>
+                    <rect key="frame" x="16" y="532.66666666666663" width="90" height="18"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QEA-jB-h06">
                             <rect key="frame" x="0.0" y="-0.33333333333333215" width="18" height="17.666666666666664"/>
@@ -134,7 +128,7 @@
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-d3-Pjd">
-                    <rect key="frame" x="113" y="535" width="20.333333333333343" height="16"/>
+                    <rect key="frame" x="113" y="534.33333333333337" width="20.333333333333343" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="VHC-ja-HIa"/>
                     </constraints>
@@ -143,7 +137,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="730,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-BB-Be3">
-                    <rect key="frame" x="16" y="565" width="69.333333333333329" height="21"/>
+                    <rect key="frame" x="16" y="564.33333333333337" width="69.333333333333329" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="TzN-EY-L2Q"/>
                     </constraints>
@@ -152,7 +146,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bl9-kk-PDI">
-                    <rect key="frame" x="86" y="568" width="12.333333333333329" height="17"/>
+                    <rect key="frame" x="86" y="567.33333333333337" width="12.333333333333329" height="17"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="17" id="cd1-yK-XJT"/>
                     </constraints>
@@ -253,6 +247,7 @@
                 <constraint firstItem="W5Q-d3-Pjd" firstAttribute="top" secondItem="F44-S6-Wj7" secondAttribute="bottom" constant="11" id="VIW-nP-zt2"/>
                 <constraint firstItem="YKG-NJ-AJq" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="VP8-ox-boa"/>
                 <constraint firstItem="rDA-DE-rc8" firstAttribute="top" secondItem="Z7x-HV-Jy0" secondAttribute="bottom" constant="21" id="ZXn-Vb-gQO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F44-S6-Wj7" secondAttribute="trailing" constant="60.666666666666686" id="d6J-hO-tN2"/>
                 <constraint firstItem="r33-Nf-gg5" firstAttribute="top" secondItem="F44-S6-Wj7" secondAttribute="bottom" constant="9.3333333333332575" id="d9Z-wx-tOL"/>
                 <constraint firstItem="F44-S6-Wj7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="h9H-0e-mmr"/>
                 <constraint firstItem="r33-Nf-gg5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hdc-mr-na3"/>
