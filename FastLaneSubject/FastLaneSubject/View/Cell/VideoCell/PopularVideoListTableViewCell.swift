@@ -24,6 +24,7 @@ class PopularVideoListTableViewCell: UITableViewCell, UICollectionViewDelegate {
         registerXib()
         setCollectionView()
         setBindings()
+        setCollectionViewModelSelectedRx()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,7 +57,18 @@ class PopularVideoListTableViewCell: UITableViewCell, UICollectionViewDelegate {
         
     }
     
-    
+    private func setCollectionViewModelSelectedRx() {
+            collectionView
+                .rx
+                .modelSelected(ViewVideo.self)
+                .subscribe(onNext: { event in
+                    if let url = URL(string: event.videoUrl) {
+                        UIApplication.shared.open(url)
+                    }
+                    print("탭")
+                })
+                .disposed(by: disposeBag)
+        }
 }
 
 //MARK: - UICollectionViewDelegateFlowLayout
