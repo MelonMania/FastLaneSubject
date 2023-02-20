@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import RxSwift
 
-let baseURL = "https://b1804a28-20f2-4c1d-b643-a8456583a821.mock.pstmn.io/latest/ios/products"
+let baseURL = "https://f9c1a8f3-132d-451a-988f-47527dbda002.mock.pstmn.io/latest/ios2/product"
 
 class APIService {
     // API 호출

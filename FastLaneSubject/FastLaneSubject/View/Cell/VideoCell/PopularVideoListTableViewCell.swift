@@ -39,6 +39,7 @@ class PopularVideoListTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
     private func setCollectionView() {
         collectionView.delegate = self
+        
     }
     
     private func setBindings() {
@@ -56,4 +57,14 @@ class PopularVideoListTableViewCell: UITableViewCell, UICollectionViewDelegate {
     }
     
     
+}
+
+//MARK: - UICollectionViewDelegateFlowLayout
+extension PopularVideoListTableViewCell : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 2.5
+        let height = 128.0
+        
+        return CGSize(width: width, height: height)
+    }
 }
